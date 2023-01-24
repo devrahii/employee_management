@@ -365,7 +365,13 @@ class _admin_dashboardState extends State<admin_dashboard> {
                                             fontSize: 18.0,
                                           ),
                                         ),
-                                        Text(users[index].department),
+                                        Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(users[index].department),
+                                            Text(users[index].joiningDate),
+                                          ],
+                                        ),
                                       ],
                                     ),
                                   ),
